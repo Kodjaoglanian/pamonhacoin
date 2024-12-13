@@ -636,7 +636,23 @@ section {
 }
 
 .floating-ball {
-    position: absolute; /* Alterar de fixed para absolute */
+    position: fixed; /* Alterar de absolute para fixed */
+    top: 200px;      /* Definir posição fixa */
+    left: 80px;      /* Ajuste o valor conforme necessário */
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(119, 221, 119, 0.6) 0%, rgba(255, 223, 0, 0.6) 100%);
+    border-radius: 50%;
+    filter: blur(100px);
+    animation: float 20s infinite alternate;
+    z-index: -1;
+}
+
+.floating-ball.right {
+    position: fixed; /* Alterar de absolute para fixed */
+    top: 200px;      /* Definir posição fixa */
+    right: 80px;     /* Ajuste o valor conforme necessário */
+    /* Manter os mesmos estilos */
     width: 200px;
     height: 200px;
     background: radial-gradient(circle, rgba(119, 221, 119, 0.6) 0%, rgba(255, 223, 0, 0.6) 100%);
