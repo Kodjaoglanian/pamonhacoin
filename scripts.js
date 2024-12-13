@@ -134,9 +134,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     animate();
 
+    // Remover ou comentar o event listener de scroll para as floating balls
+    /*
     window.addEventListener('scroll', function() {
         const scrollPosition = window.scrollY;
-        const floatingBall = document.querySelector('.floating-ball');
-        floatingBall.style.top = `${scrollPosition + 200}px`; // Ajuste o valor '200' conforme necessário
+        const floatingBalls = document.querySelectorAll('.floating-ball');
+        floatingBalls.forEach((floatingBall) => {
+            floatingBall.style.top = `${scrollPosition + 200}px`; // Ajuste o valor conforme necessário
+        });
     });
+    */
 });
