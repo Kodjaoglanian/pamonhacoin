@@ -133,4 +133,10 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     animate();
+
+    window.addEventListener('scroll', function() {
+        const scrollPosition = window.scrollY;
+        const floatingBall = document.querySelector('.floating-ball');
+        floatingBall.style.top = `${scrollPosition + 200}px`; // Ajuste o valor '200' conforme necessário
+    });
 });
